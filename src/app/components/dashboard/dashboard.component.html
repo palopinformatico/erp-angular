@@ -1,0 +1,42 @@
+<h2 style="text-align: center;">Dashboard de Gráficos (ApexCharts)</h2>
+
+<div class="grid-container">
+  <div class="chart-box">
+    <apx-chart
+      [series]="barChart.series"
+      [chart]="barChart.chart"
+      [xaxis]="barChart.xaxis"
+      [title]="barChart.title"
+    ></apx-chart>
+  </div>
+
+  <div class="chart-box">
+    <apx-chart
+      [series]="lineChart.series"
+      [chart]="lineChart.chart"
+      [xaxis]="lineChart.xaxis"
+      [title]="lineChart.title"
+    ></apx-chart>
+  </div>
+
+  <div class="chart-box">
+    <apx-chart
+      [series]="pieChart.series"
+      [chart]="pieChart.chart"
+      [labels]="pieChart.labels"
+      [responsive]="pieChart.responsive"
+      [title]="pieChart.title"
+    ></apx-chart>
+  </div>
+
+  <div class="chart-box">
+    <apx-chart
+      [series]="radialChart.series"
+      [chart]="radialChart.chart"
+      [plotOptions]="radialChart.plotOptions"
+      [fill]="radialChart.fill"
+      [labels]="radialChart.labels"
+      [title]="radialChart.title"
+    ></apx-chart>
+  </div>
+</div>
