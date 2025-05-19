@@ -1,0 +1,10 @@
+<h2>Componente Padre</h2>
+<p>Mensaje del hijo: {{ childMessage }}</p>
+<button (click)="updateChildMessage()">Actualizar mensaje del hijo</button>
+
+<hr>
+
+<app-child
+  [messageFromParent]="parentMessage"
+  (messageToParent)="handleChildMessage($event)">
+</app-child>

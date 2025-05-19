@@ -1,0 +1,9 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+mat-form-field {
+  margin-bottom: 20px;
+}
